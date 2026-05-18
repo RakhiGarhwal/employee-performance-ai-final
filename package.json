@@ -1,11 +1,11 @@
 {
-  "name": "employee-performance-ai-system",
+  "name": "employee-performance-ai-final",
   "version": "1.0.0",
   "main": "server/index.js",
   "scripts": {
-  "start": "node server/index.js",
-  "build": "cd client && npm install && npm run build"
-},
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
+  },
   "dependencies": {
     "axios": "^1.9.0",
     "cors": "^2.8.5",
