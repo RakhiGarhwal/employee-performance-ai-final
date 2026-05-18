@@ -18,12 +18,12 @@ mongoose.connect(process.env.MONGO_URI)
 app.use("/api/employees", require("./routes/employeeRoutes"));
 
 // FRONTEND SERVE
-app.use(express.static(path.join(__dirname, "../dist")));
+// FRONTEND SERVE
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
